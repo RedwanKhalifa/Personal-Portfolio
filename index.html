@@ -6,86 +6,323 @@
     <title>Landing page</title>
     <!--CSS file-->
     <link rel="stylesheet" href="styles.css">
-
+    <!--JS file-->
+    <script src="script.js"></script>
 </head>
 <body>
     <div>
+        <!--Header-->
         <div>
-        <!--Header logo-->
             <header>
-                    <h1>Header Logo</h1>
+                    <h1>Hello! I'm Redwan Khalifa</h1>
                 <nav>
                     <ul>
-                        <li><a href="#Headerlinkone">Header link one</a></li>
-                        <li><a href="#Headerlinktwo">Header link two</a></li>
-                        <li><a href="#Headerlinkthree">Header link three</a></li>
+                        <li><a href="#index.html">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
             </header>
         </div>
-        <div class="section-1">
-        <!--This website is awesome-->
+        <!--Resume and introduction-->
+        <div class="intro-section-1">
             <div class="s1text">
-                <h1>This website is</h1>
-                <h1>awesome</h1>
-                <p>This website has some subtext that goes here under the</p>
-                <p>main title. It's a smaller font and the color is lower</p>
-                <p>contrast</p>
-                <button>Sign up</button>
+                <h1>Let's Connect!</h1>
+                <p>I’m a Computer Engineering student passionate about</p>
+                <p>
+                    <span class="red-text">technology</span>, 
+                    <span class="yellow-text">innovation</span>, 
+                    and creating <span class="blue-text">impactful</span> solutions.
+                </p>
+                <br>
+                <p>Click on my resume to see my projects, skills, and experience.</p>
+                
+                <video class="animated-arrow" autoplay loop muted playsinline>
+                    <source src="videos/Arrow.webm" type="video/webm">
+                    Your browser does not support the video tag.
+                </video>
+                
             </div>
             <div>
-                <div class="grey-box"> 
-                    <p>this is a placeholder for an image</p> 
+                <div class="resume-container">
+                    <a href="files/Redwan_Khalifa_Resume.pdf" target="_blank">
+                        <img src="images/Redwan_Khalifa_Resume.jpg" alt="Redwan Khalifa Resume" class="resume-image">
+                    </a>
                 </div>
+                            
             </div>
         </div>
-        <div class="section-2">
-        <!--Some random information-->
-            <div class="s2text">
-                <h1>Some random information.</h1>
+        <!--About-->
+        <div class="title" id="about">
+            <h1>About</h1>
+        </div>
+        <!-- About Me Section -->
+        <div class="about-section-2">
+            <!-- Left: Text -->
+            <div class="about-text">
+                <p>
+                    My passion for technology started early. As a child, I was fascinated by gadgets, 
+                    often dismantling television remotes out of sheer curiosity, much to my parents' 
+                    frustration. But my real journey began in 2009 when my father brought home our 
+                    first personal computer. It was unlike anything I had ever used, endlessly engaging, 
+                    and full of possibilities I hadn’t imagined.
+                </p>
+                <p>
+                    That curiosity only grew over the years. By eighth grade in 2016, I developed a 
+                    strong interest in computer hardware, just as Nvidia and AMD were unveiling their 
+                    next-generation graphics cards. Determined to build my own PC, I got my hands on 
+                    an RX 480 and carefully assembled my first custom PC. The process was exciting, 
+                    effortless, and fulfilling, making me realize that this was more than just a hobby.
+                </p>
+                <p>
+                    That experience solidified my long-term ambition to dive deeper and learn more about 
+                    computers. It set me on the path to studying Computer Engineering, bringing me to where 
+                    I am today—pursuing my passion, eager to innovate, and always hungry to learn more.
+                </p>
             </div>
-            <div class="boxrow"><!--4 boxes with text at the bottom-->
-                <div class="blueline-box">
-                    <p>this is some subtext under an illustration or image</p>
-                </div>
-                <div class="blueline-box">
-                    <p>this is some subtext under an illustration or image</p>
-                </div>
-                <div class="blueline-box">
-                    <p>this is some subtext under an illustration or image</p>
-                </div>
-                <div class="blueline-box">
-                    <p>this is some subtext under an illustration or image</p>
-                </div>
+
+            <!-- Right: Profile Picture, Audio Wave & Player -->
+            <div class="about-media">
+                <img src="images/Profile.jpg" alt="Redwan Khalifa" class="profile-picture">
+
+                <video class="audio-wave" autoplay loop muted playsinline>
+                    <source src="videos/audiowave.webm" type="video/webm">
+                    Your browser does not support the video tag.
+                </video>
+
+                <audio controls>
+                    <source src="audio/audio.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
             </div>
         </div>
-        <div class="section-3">
-        <!--Thor God of Thunder-->
-            <div class="s3text">
-                <p><i>This is an inspiring quote, or a testimonial from a 
-                    customer. Maybe it's just filling up space, or maybe 
-                    people will actually read it. Who knows? All I know 
-                    is that it looks nice.</i></p>
-            </div>
-            <div class="s3title">
-                <h1>-Thor, God of Thunder</h1>
+        <!--Projects-->
+        <div class="title" id="projects">
+            <h1>Projects</h1>
+        </div>
+        <div class="projects-section3">
+            <div class="projects-container">
+                <button class="scroll-btn left-btn">&#8592;</button>
+                <div class="projects-slider">
+                    <div class="project-card" style="background-image: url('images/project1.jpg');">
+                        <div class="project-info">
+                            <h2>Event Planner Web Application</h2>
+                            <p>An event planner website that helps users create events, send and receive RSVPs, organize to-do lists, and track donations or revenue.</p>
+                            <a href="https://github.com/RedwanKhalifa/COE692-Event_Planner_Web_Application" target="_blank" class="github-btn">View on GitHub</a>
+                        </div>
+                    </div>
+                    <div class="project-card" style="background-image: url('images/project2.jpg');">
+                        <div class="project-info">
+                            <h2>Book Store Application</h2>
+                            <p>The project is a GUI-based Bookstore App built with JavaFX in NetBeans, utilizing the state design pattern and file-based data storage to manage books, customers, purchases, and reward points, with UML diagrams for design documentation.</p>
+                            <a href="https://github.com/RedwanKhalifa/COE528-Book_Store_Application" target="_blank" class="github-btn">View on GitHub</a>
+                        </div>
+                    </div>
+                    <div class="project-card" style="background-image: url('images/project3.jpg');">
+                        <div class="project-info">
+                            <h2>FCFS (First Come First Server) Algorithm Calculator</h2>
+                            <p>The program simulates the FCFS CPU scheduling algorithm, processing user-inputted data to compute and display each process's turnaround time, waiting time, and their averages in the console.</p>
+                            <a href="https://github.com/RedwanKhalifa/CPS109-FCFS_Algorithm_Calculator" target="_blank" class="github-btn">View on GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <button class="scroll-btn right-btn">&#8594;</button>
             </div>
         </div>
-        <div class="section-4">
-        <!--Call to action! It's time!-->
-            <div class="blue-box">
-                <div class="s4text">
-                    <h1>Call to action! It's time!</h1>
-                    <p>Sign up for our product by clicking that button right over there!</p>
-                </div>
-                <div class="s4button">
-                    <button>Sign up</button>
+        <!--Skills-->
+        <div class="title" id="skills">
+            <h1>Skills</h1>
+        </div>
+        <div class="skills-section4">
+            <div class="skills-container">
+                <h2 class="skills-title">Programming Languages</h2>
+                <div class="skills-list">
+                    <div class="skill">
+                        <img src="images/programming/c.png" alt="C">
+                        <p>C</p>
+                    </div>
+                    <div class="skill">
+                        <img src="images/programming/c++.png" alt="C++">
+                        <p>C++</p>
+                    </div>
+                    <div class="skill">
+                        <img src="images/programming/css.png" alt="CSS">
+                        <p>CSS</p>
+                    </div>
+                    <div class="skill">
+                        <img src="images/programming/java.png" alt="Java">
+                        <p>Java</p>
+                    </div>
+                    <div class="skill">
+                        <img src="images/programming/sql.png" alt="SQL">
+                        <p>SQL</p>
+                    </div>
+                    <div class="skill">
+                        <img src="images/programming/python.png" alt="Python">
+                        <p>Python</p>
+                    </div>
+                    <div class="skill">
+                        <img src="images/programming/html.png" alt="HTML">
+                        <p>HTML</p>
+                    </div>
+                    <div class="skill">
+                        <img src="images/programming/javascript.png" alt="JavaScript">
+                        <p>JavaScript</p>
+                    </div>
+                    <div class="skill">
+                        <img src="images/programming/matlab.png" alt="MATLAB">
+                        <p>MATLAB</p>
+                    </div>
+                    <div class="skill">
+                        <img src="images/programming/bash.png" alt="Bash">
+                        <p>Bash</p>
+                    </div>
                 </div>
             </div>
-        </div>
+            <div class="skills-container">
+                <h2 class="skills-title">Software & Tools</h2>
+                <div class="skills-list">
+                    <div class="skill">
+                        <img src="images/software/window.png" alt="Windows">
+                        <p>Windows</p>
+                    </div>
+                    <div class="skill">
+                        <img src="images/software/linux.png" alt="Linux">
+                        <p>Linux</p>
+                    </div>
+                    <div class="skill">
+                        <img src="images/software/macos.png" alt="MacOS">
+                        <p>MacOS</p>
+                    </div>
+                    <div class="skill">
+                        <img src="images/software/android.png" alt="Android">
+                        <p>Android</p>
+                    </div>
+                    <div class="skill">
+                        <img src="images/software/ios.png" alt="iOS">
+                        <p>iOS</p>
+                    </div>
+                    <div class="skill">
+                        <img src="images/software/git.png" alt="Git">
+                        <p>Git</p>
+                    </div>
+                    <div class="skill">
+                        <img src="images/software/github.png" alt="GitHub">
+                        <p>GitHub</p>
+                    </div>
+                    <div class="skill">
+                        <img src="images/software/vscode.png" alt="VS Code">
+                        <p>VS Code</p>
+                    </div>
+                    <div class="skill">
+                        <img src="images/software/netbeans.png" alt="NetBeans">
+                        <p>NetBeans</p>
+                    </div>
+                    <div class="skill">
+                        <img src="images/software/intellij.png" alt="IntelliJ">
+                        <p>IntelliJ</p>
+                    </div>
+                    <div class="skill">
+                        <img src="images/software/arduinoide.png" alt="Arduino IDE">
+                        <p>Arduino IDE</p>
+                    </div>
+                    <div class="skill">
+                        <img src="images/software/postgresql.png" alt="PostgreSQL">
+                        <p>PostgreSQL</p>
+                    </div>
+                    <div class="skill">
+                        <img src="images/software/virtualbox.png" alt="VirtualBox">
+                        <p>VirtualBox</p>
+                    </div>
+                    <div class="skill">
+                        <img src="images/software/mysql.png" alt="MySQL">
+                        <p>MySQL</p>
+                    </div>
+                </div>
+            </div>
+            <div class="skills-container">
+                <h3 class="skills-title">Engineering & Embedded Systems</h3>
+                <div class="skills-list">
+                    <div class="skill">
+                        <img src="images/engineering/arduino.png" alt="Arduino">
+                        <p>Arduino</p>
+                    </div>
+                    <div class="skill">
+                        <img src="images/engineering/raspberrypi.png" alt="Raspberry Pi">
+                        <p>Raspberry Pi</p>
+                    </div>
+                    <div class="skill">
+                        <img src="images/engineering/hcs12.png" alt="HCS12">
+                        <p>HCS12</p>
+                    </div>
+                    <div class="skill">
+                        <img src="images/engineering/autocad.png" alt="AutoCAD">
+                        <p>AutoCAD</p>
+                    </div>
+                    <div class="skill">
+                        <img src="images/engineering/quartus.png" alt="Quartus">
+                        <p>Quartus</p>
+                    </div>
+                </div>
+            </div>
+            <div class="skills-container">
+                <h2 class="skills-title">Concepts & Methodologies</h2>
+                <div class="skills-list">
+                    <div class="skill">
+                        <img src="images/concepts/oop.png" alt="Object-Oriented Programming">
+                        <p>Object-Oriented Programming</p>
+                    </div>
+                    <div class="skill">
+                        <img src="images/concepts/dsa.png" alt="Data Structures & Algorithms">
+                        <p>Data Structures & Algorithms</p>
+                    </div>
+                    <div class="skill">
+                        <img src="images/concepts/sdlc.png" alt="Software Development Life Cycle">
+                        <p>Software Development Life Cycle</p>
+                    </div>
+                    <div class="skill">
+                        <img src="images/concepts/dbdm.png" alt="Database Design & Management">
+                        <p>Database Design & Management</p>
+                    </div>
+                    <div class="skill">
+                        <img src="images/concepts/ci.png" alt="Compilers & Interpreters">
+                        <p>Compilers & Interpreters</p>
+                    </div>
+                </div>
+            </div>            
+        </div>               
         <div class="section-5">
-        <!--Copy right-->
-            <p>Copyright &copy The Odin Project 2021</p>
+        <!--Location-->
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115570.35188279855!2d-79.54243846249999!3d43.71815575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34d9df385aff%3A0x7554ebc36f0d2f2b!2sToronto%2C%20ON!5e0!3m2!1sen!2sca!4v1711747462184" 
+                    width="100%" 
+                    height="600" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>        
+        </div>
+        <div class="end-section-6" id="contact">
+        <!--Copy right & Contact-->
+        <p class="copyright">&copy; Redwan Khalifa 2025</p>
+
+        <div class="social-icons">
+            <a href="https://github.com/RedwanKhalifa" target="_blank">
+                <img src="images/Github.jpg" alt="GitHub">
+            </a>
+            <a href="mailto:redwan.khalifa1@gmail.com">
+                <img src="images/Gmail.png" alt="Gmail">
+            </a>
+            <a href="https://www.linkedin.com/in/redwan-khalifa" target="_blank">
+                <img src="images/Linkedin.png" alt="LinkedIn">
+            </a>
+            <a href="https://x.com/KhalifaRedwan" target="_blank">
+                <img src="images/X(white).png" alt="Twitter/X">
+            </a>
         </div>
     </div>
 </body>
